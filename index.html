@@ -1,0 +1,626 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        .tab button.active {
+            border-bottom: solid 2px green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="flex justify-between h-12 text-xs">
+                <div class="flex items-center">
+                    <img src="https://logo.kiotviet.vn/KiotViet-Logo-Horizontal.svg" alt="KiotViet" class="h-[32px]" />
+                </div>
+                <ul class="nav flex justify-between items-center">
+                    <li class="nav__item px-4 py-2">
+                        <a href="#aa" class="nav__link">
+                            <i class="far fa-shopping-bag mr-1 text-base"></i>
+                            <span>Bán online</span>
+                        </a>
+                    </li>
+                    <li class="nav__item px-4 py-2">
+                        <a href="#aa" class="nav__link">
+                            <i class="far fa-truck-moving mr-1 text-base"></i>
+                            <span>Giao hàng</span>
+                        </a>
+                    </li>
+                    <li class="nav__item px-4 py-2">
+                        <a href="#aa" class="nav__link">
+                            <i class="far fa-globe mr-1 text-base"></i>
+                            <span>Website</span>
+                        </a>
+                    </li>
+                    <li class="nav__item px-4 py-2">
+                        <a href="#aa" class="nav__link">
+                            <i class="far fa-spa mr-1 text-base"></i>
+                            <span>Tài chính</span>
+                        </a>
+                    </li>
+                    <li class="nav__item px-4 py-2">
+                        <a href="#aa" class="nav__link">
+                            <i class="far fa-spa mr-1 text-base"></i>
+                            <span>Nguồn hàng giá tốt</span>
+                        </a>
+                    </li>
+                    <li class="nav__item px-4 py-2">
+                        <a href="#aa" class="nav__link">
+                            <i class="far fa-palette mr-1 text-base"></i>
+                            <span>Chủ đề</span>
+                        </a>
+                    </li>
+                    <li class="nav__item px-4 py-2">
+                        <a href="#aa" class="nav__link">
+                            <i class="far fa-comment-exclamation mr-1 text-base"></i>
+                            <span>Hỗ trợ</span>
+                        </a>
+                    </li>
+                    <li class="nav__item px-4 py-2">
+                        <a href="#aa" class="nav__link">
+                            <i class="far fa-comment-edit mr-1 text-base"></i>
+                            <span>Góp ý</span>
+                        </a>
+                    </li>
+                    <li class="nav__item px-4 py-2">
+                        <a href="#aa" class="nav__link">
+                            <i class="far fa-envelope-open text-base"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item px-4 py-2">
+                        <a href="#aa" class="nav__link">
+                            <i class="far fa-cog text-base"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item px-4 py-2">
+                        <a href="#aa" class="nav__link">
+                            <span class="mr-1">huynhthetao98</span>
+                            <i class="far fa-user-circle text-base"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-blue-500">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="nav__bottom flex justify-between h-12 items-center text-sm text-white">
+                    <ul class="nav nav__left flex justify-between">
+                        <li class="nav__item px-5 py-3">
+                            <a href="#aa" class="nav__link">
+                                <i class="far fa-eye mr-1 text-base"></i>
+                                <span>Tổng quan</span>
+                            </a>
+                        </li>
+                        <li class="nav__item px-5 py-3">
+                            <a href="#aa" class="nav__link">
+                                <i class="far fa-box mr-1 text-base"></i>
+                                <span>Hàng hoá</span>
+                            </a>
+                        </li>
+                        <li class="nav__item px-5 py-3">
+                            <a href="#aa" class="nav__link">
+                                <i class="far fa-exchange mr-1 text-base"></i>
+                                <span>Giao dịch</span>
+                            </a>
+                        </li>
+                        <li class="nav__item px-5 py-3">
+                            <a href="#aa" class="nav__link">
+                                <i class="far fa-user mr-1 text-base"></i>
+                                <span>Đối tác</span>
+                            </a>
+                        </li>
+                        <li class="nav__item px-5 py-3">
+                            <a href="#aa" class="nav__link">
+                                <i class="far fa-user-friends mr-1 text-base"></i>
+                                <span>Nhân viên</span>
+                            </a>
+                        </li>
+                        <li class="nav__item px-5 py-3">
+                            <a href="#aa" class="nav__link">
+                                <i class="far fa-usd-circle mr-1 text-base"></i>
+                                <span>Số quỹ</span>
+                            </a>
+                        </li>
+                        <li class="nav__item px-5 py-3">
+                            <a href="#aa" class="nav__link">
+                                <i class="far fa-file-contract mr-1 text-base"></i>
+                                <span>Báo cáo</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-right flex justify-between">
+                        <li class="nav__item px-5 py-3">
+                            <a href="#aa" class="nav__link"><i class="far fa-shopping-cart mr-1 text-base"></i>
+                                <span>Bán Online</span>
+                            </a>
+                        </li>
+                        <li class="nav__item px-5 py-3">
+                            <a href="#aa" class="nav__link">
+                                <i class="far fa-shopping-basket mr-1 text-base"></i>
+                                <span>Bán hàng</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bg-gray-200 text-sm">
+        <div class="main_body max-w-screen-2xl mx-auto flex">
+            <div class="main__left w-60 mt-4 mr-6">
+                <h1 class="text-xl font-bold pb-4 mb-3">Hàng hoá</h1>
+                <div class="bg-white rounded p-3 mb-4">
+                    <div class="flex justify-between">
+                        <h3 class="font-medium">Loại hàng</h3>
+                        <i class="far fa-chevron-down"></i>
+                    </div>
+                    <div class="pt-2">
+                        <div class="py-2">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label class="ml-2" for="vehicle1">Hàng hoá</label>
+                        </div>
+                        <div class="py-2">
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                            <label class="ml-2" for="vehicle2">Dịch vụ</label>
+                        </div>
+                        <div class="py-2">
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                            <label class="ml-2" for="vehicle3">Combo - Đóng gói</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded p-3 mb-4">
+                    <div class="flex justify-between">
+                        <h3 class="font-medium">Nhóm hàng</h3>
+                        <div>
+                            <i class="far fa-plus-circle mr-2" onclick="openCreProGroup()"></i>
+                            <i class="far fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <input type="text" class="w-full outline-none border-b pb-1 focus:border-b-[green]"
+                            placeholder="Tìm kiếm nhóm hàng">
+                    </div>
+                    <div>
+                        <div class="py-2 px-4 bg-gray-100">Tất cả</div>
+                        <div class="py-2 px-4">Áo</div>
+                        <div class="py-2 px-4">Quần</div>
+                    </div>
+                </div>
+                <div class="bg-white rounded p-3 mb-4">
+                    <div class="flex justify-between">
+                        <h3 class="font-medium">Tồn kho</h3>
+                        <i class="far fa-chevron-down"></i>
+                    </div>
+                    <div class="pt-2">
+                        <div class="py-2">
+                            <input type="radio" id="html" name="fav_language">
+                            <label class="ml-2" for="html">Tất cả</label><br>
+                        </div>
+                        <div class="py-2">
+                            <input type="radio" id="css" name="fav_language">
+                            <label class="ml-2" for="css">Dưới định mức tồn</label><br>
+                        </div>
+                        <div class="py-2">
+                            <input type="radio" id="javascript" name="fav_language">
+                            <label class="ml-2" for="javascript">Vượt định mức tồn</label>
+                        </div>
+                        <div class="py-2">
+                            <input type="radio" id="javascript" name="fav_language">
+                            <label class="ml-2" for="javascript">Còn hàng trong kho</label>
+                        </div>
+                        <div class="py-2">
+                            <input type="radio" id="javascript" name="fav_language">
+                            <label class="ml-2" for="javascript">Hết hàng trong kho</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded p-3 mb-4">
+                    <div class="flex justify-between">
+                        <h3 class="font-medium">Bán trực tiếp</h3>
+                        <i class="far fa-chevron-down"></i>
+                    </div>
+                    <div class="pt-2">
+                        <div class="py-2">
+                            <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+                            <label class="ml-2" for="vehicle1">Tất cả</label>
+                        </div>
+                        <div class="py-2">
+                            <input type="radio" id="vehicle2" name="vehicle2" value="Car">
+                            <label class="ml-2" for="vehicle2">Được bán trực tiếp</label>
+                        </div>
+                        <div class="py-2">
+                            <input type="radio" id="vehicle3" name="vehicle3" value="Boat">
+                            <label class="ml-2" for="vehicle3">Không được bán trực tiếp</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded p-2 mb-4">
+                    <h3 class="font-medium">Ngày dự kiến hết hàng</h3>
+                    <div class="pt-2">
+                        <div class="py-2">
+                            <input type="radio" class="mr-2">
+                            <input type="text" placeholder="Toàn thời gian"
+                                class="outline-none border-b pb-1 focus:border-b-[green]">
+                        </div>
+                        <div class="py-2">
+                            <input type="radio" class="mr-2">
+                            <input type="text" placeholder="Lựa chọn khác"
+                                class="outline-none border-b pb-1 focus:border-b-[green]">
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded p-2 mb-4">
+                    <h3 class="font-medium">Vị trí</h3>
+                    <div class="py-2 mt-3">
+                        <input type="text" placeholder="Chọn vị trí"
+                            class="w-full outline-none border-b pb-1 focus:border-b-[green]">
+                    </div>
+                </div>
+                <div class="bg-white rounded p-2 mb-4">
+                    <div class="flex justify-between">
+                        <h3 class="font-medium">Liên kết kênh bán</h3>
+                        <i class="far fa-chevron-down"></i>
+                    </div>
+                    <div class="pt-2">
+                        <div class="py-2">
+                            <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+                            <label class="ml-2" for="vehicle2">Tất cả</label>
+                        </div>
+                        <div class="py-2">
+                            <input type="radio" id="vehicle2" name="vehicle2" value="Car">
+                            <label class="ml-2" for="vehicle2">Có liên kết kênh bán</label>
+                        </div>
+                        <div class="py-2">
+                            <input type="radio" id="vehicle2" name="vehicle2" value="Car">
+                            <label class="ml-2" for="vehicle2">Không liên kết kênh bán</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded p-2 mb-4">
+                    <h3 class="font-medium">Lựa chọn hiển thị</h3>
+                    <div class="pt-2">
+                        <div class="py-2">
+                            <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+                            <label class="ml-2" for="vehicle2">Hàng đang kinh doanh</label>
+                        </div>
+                        <div class="py-2">
+                            <input type="radio" id="vehicle2" name="vehicle2" value="Car">
+                            <label class="ml-2" for="vehicle2">Hàng ngừng kinh doanh</label>
+                        </div>
+                        <div class="py-2">
+                            <input type="radio" id="vehicle2" name="vehicle2" value="Car">
+                            <label class="ml-2" for="vehicle2">Tất cả</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex p-2 mb-4 justify-between">
+                    <div>Số bản ghi:</div>
+                    <div>15</div>
+                </div>
+            </div>
+            <div class="main__right mt-4 w-full">
+                <div class="flex justify-between mb-5">
+                    <div class="w-[450px] h-full rounded bg-white flex">
+                        <i class="far fa-search py-2 px-4 w-1/12"></i>
+                        <input type="text" placeholder="Theo mã, tên hàng" class="w-11/12 py-2 px-2 outline-none">
+                    </div>
+                    <div class="text-white">
+                        <button class="bg-green-500 px-5 py-2 rounded" onclick="openCreProduct()">
+                            <i class="far fa-plus mr-2"></i>
+                            Thêm mới
+                        </button>
+                        <button class="bg-green-500 px-5 py-2 rounded">
+                            <i class="far fa-file-import mr-2"></i>
+                            Import
+                        </button>
+                        <button class="bg-green-500 px-5 py-2 rounded">
+                            <i class="far fa-file-export mr-2"></i>
+                            Xuất file
+                        </button>
+                        <button class="bg-green-500 px-5 py-2 rounded h-9">
+                            <i class="far fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <table class="w-full bg-white text-left">
+                        <tr class="text-sm border border-gray-300">
+                            <th class="px-3 py-4"><input type="checkbox"></th>
+                            <th class="p-2">Mã hàng</th>
+                            <th class="p-2 w-1/3">Tên hàng</th>
+                            <th class="p-2">Giá bán</th>
+                            <th class="p-2">Giá vốn</th>
+                            <th class="p-2">Tồn kho</th>
+                            <th class="p-2">Khách đặt</th>
+                            <th class="p-2">Dự kiến hết hàng</th>
+                        </tr>
+                        <tr class="border border-gray-300">
+                            <td class="px-3 py-4"></td>
+                            <td class="p-2"></td>
+                            <td class="p-2 w-1/3" class="p-2"></td>
+                            <td class="p-2"></td>
+                            <td class="p-2"></td>
+                            <td class="p-2">240</td>
+                            <td class="p-2">0</td>
+                            <td class="p-2">---</td>
+                        </tr>
+                        <tr class="border border-gray-300">
+                            <td class="px-3 py-4"><input type="checkbox"></td>
+                            <td class="p-2">SP00001</td>
+                            <td class="p-2 w-1/3" class="p-2">Áo thun nam</td>
+                            <td class="p-2">199</td>
+                            <td class="p-2">150</td>
+                            <td class="p-2">30</td>
+                            <td class="p-2">0</td>
+                            <td class="p-2">---</td>
+                        </tr>
+                        <tr class="border border-gray-300">
+                            <td class="px-3 py-4"><input type="checkbox"></td>
+                            <td class="p-2">SP00002</td>
+                            <td class="p-2 w-1/3" class="p-2">Áo khoác nam</td>
+                            <td class="p-2">299</td>
+                            <td class="p-2">250</td>
+                            <td class="p-2">10</td>
+                            <td class="p-2">0</td>
+                            <td class="p-2">---</td>
+                        </tr>
+                        <tr class="border border-gray-300">
+                            <td class="px-3 py-4"><input type="checkbox"></td>
+                            <td class="p-2">SP00003</td>
+                            <td class="p-2 w-1/3" class="p-2">Áo crop nữ</td>
+                            <td class="p-2">150</td>
+                            <td class="p-2">80</td>
+                            <td class="p-2">200</td>
+                            <td class="p-2">0</td>
+                            <td class="p-2">---</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Form create product group -->
+    <div id="formCreProGroup"
+        class="w-1/3 absolute top-9 left-1/2 -translate-x-1/2 px-6 py-4 bg-white border rounded-lg hidden">
+        <div class="flex justify-between mb-6">
+            <div class="font-semibold text-base">Thêm nhóm hàng</div>
+            <i class="far fa-times" onclick="closeCreProGroup()"></i>
+        </div>
+        <div class="mb-4 flex text-sm">
+            <div class="w-1/4">
+                <label class="font-semibold">Tên nhóm</label>
+            </div>
+            <input type="text" class="w-3/4 outline-none border-b focus:border-b-[green] p-1">
+        </div>
+        <div class="mb-4 flex text-sm">
+            <div class="w-1/4">
+                <label class="font-semibold">Nhóm cha</label>
+            </div>
+            <select class="w-3/4 outline-none border-b pb-1 focus:border-b-[green]">
+                <option value="chọn" selected>--Lựa chọn--</option>
+                <option value="áo">Áo</option>
+                <option value="quần">Quần</option>
+            </select>
+        </div>
+        <div class="flex justify-end mt-8 text-white">
+            <button class="px-5 py-1 bg-green-500 mr-2 rounded">
+                <i class="far fa-save mr-2 text-base"></i>
+                Lưu
+            </button>
+            <button class="px-5 py-1 bg-gray-500 rounded" onclick="closeCreProGroup()">
+                <i class="far fa-chevron-circle-right text-base mr-1"></i>
+                Bỏ qua
+            </button>
+        </div>
+    </div>
+    <!-- Form create product -->
+    <div id="formCreProduct" class="w-1/2 absolute top-9 left-1/2 -translate-x-1/2 bg-white border rounded-lg hidden">
+        <div class="flex justify-between px-6 py-4 bg-gray-100">
+            <div class="font-semibold text-base">Thêm hàng</div>
+            <i class="far fa-times" onclick="closeCreProduct()"></i>
+        </div>
+        <div class="pb-6">
+            <!-- Tab links -->
+            <div class="tab bg-gray-100 text-gray-700 border-b border-gray-300 mb-8 text-sm">
+                <button class="tablinks px-7 py-2 active" onclick="openCity(event, 'information')">Thông
+                    tin</button>
+                <button class="tablinks px-7 py-2" onclick="openCity(event, 'describe')">Mô tả chi tiết</button>
+                <button class="tablinks px-7 py-2" onclick="openCity(event, 'element')">Thành phần</button>
+            </div>
+            <!-- Tab content -->
+            <div id="information" class="tabcontent text-sm">
+                <div class="flex">
+                    <div class="w-3/5 px-6">
+                        <div class="mb-4 flex">
+                            <div class="w-1/4">
+                                <label class="font-semibold">Mã hàng <i class="far fa-info-circle ml-2"></i></label>
+                            </div>
+                            <input type="text" class="w-3/4 outline-none border-b pb-1 focus:border-b-[green]"
+                                placeholder="Mã hàng tự động">
+                        </div>
+                        <div class="mb-4 flex">
+                            <div class="w-1/4">
+                                <label class="font-semibold">Mã vạch <i class="far fa-info-circle ml-2"></i></label>
+                            </div>
+                            <input type="text" class="w-3/4 outline-none border-b pb-1 focus:border-b-[green]">
+                        </div>
+                        <div class="mb-4 flex">
+                            <div class="w-1/4">
+                                <label class="font-semibold">Tên hàng <i class="far fa-info-circle ml-2"></i></label>
+                            </div>
+                            <input type="text" class="w-3/4 outline-none border-b pb-1 focus:border-b-[green]">
+                        </div>
+                        <div class="mb-4 flex">
+                            <div class="w-1/4">
+                                <label class="font-semibold">Nhóm hàng <i class="far fa-info-circle ml-2"></i></label>
+                            </div>
+                            <select class="w-3/4 outline-none border-b pb-1 focus:border-b-[green]">
+                                <option value="chọn" selected>--Lựa chọn--</option>
+                                <option value="áo">Áo</option>
+                                <option value="quần">Quần</option>
+                            </select>
+                        </div>
+                        <div class="mb-4 flex">
+                            <div class="w-1/4">
+                                <label class="font-semibold">Thương hiệu <i class="far fa-info-circle ml-2"></i></label>
+                            </div>
+                            <select class="w-3/4 outline-none border-b pb-1 focus:border-b-[green]">
+                                <option value="chọn" selected>--Chọn thương hiệu--</option>
+                            </select>
+                        </div>
+                        <div class="mb-4 flex">
+                            <div class="w-1/4">
+                                <label class="font-semibold">Vị trí <i class="far fa-info-circle ml-2"></i></label>
+                            </div>
+                            <input type="text" class="w-3/4 outline-none border-b pb-1 focus:border-b-[green]">
+                        </div>
+                    </div>
+                    <div class="w-2/5 px-6">
+                        <div class="mb-4 flex">
+                            <div class="w-2/5">
+                                <label class="font-semibold">Giá vốn <i class="far fa-info-circle ml-2"></i></label>
+                            </div>
+                            <input type="text" class=" w-3/5 outline-none border-b pb-1 focus:border-b-[green]"
+                                value="0">
+                        </div>
+                        <div class="mb-4 flex">
+                            <div class="w-2/5">
+                                <label class="font-semibold">Giá bán</label>
+                            </div>
+                            <input type="text" class=" w-3/5 outline-none border-b pb-1 focus:border-b-[green]"
+                                value="0">
+                        </div>
+                        <div class="mb-4 flex">
+                            <div class="w-2/5">
+                                <label class="font-semibold">Tồn kho <i class="far fa-info-circle ml-2"></i></label>
+                            </div>
+                            <input type="text" class=" w-3/5 outline-none border-b pb-1 focus:border-b-[green]"
+                                value="0">
+                        </div>
+                        <div class="mb-4 flex">
+                            <div class="w-2/5">
+                                <label class="font-semibold">Trọng lượng <i class="far fa-info-circle ml-2"></i></label>
+                            </div>
+                            <input type="text" class=" w-2/5 outline-none border-b pb-1 focus:border-b-[green] mr-2">
+                            <select class="w-1/5 outline-none border-b pb-1 focus:border-b-[green]">
+                                <option value="áo" selected>gram</option>
+                                <option value="quần">kg</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="describe" class="tabcontent hidden px-6 text-sm">
+                <div class="border rounded border-gray-300">
+                    <h5 class="px-4 py-3 bg-gray-100 bold">Định mức tồn</h5>
+                    <div class="flex px-5 py-3">
+                        <div class="w-1/2 mb-4 flex">
+                            <div class="w-1/3">
+                                <label class="font-semibold">Ít nhất <i class="far fa-info-circle ml-2"></i></label>
+                            </div>
+                            <input type="text" class="w-2/3 outline-none border-b pb-1 focus:border-b-[green]"
+                                value="0">
+                        </div>
+                        <div class="w-1/2 mb-4 flex">
+                            <div class="w-1/3">
+                                <label class="font-semibold">Nhiều nhất <i class="far fa-info-circle ml-2"></i></label>
+                            </div>
+                            <input type="text" class="w-2/3 outline-none border-b pb-1 focus:border-b-[green]"
+                                value="999,999,999">
+                        </div>
+                    </div>
+                </div>
+                <div class="border rounded border-gray-300 my-4 min-h-[150px]">
+                    <h5 class="px-4 py-3 bg-gray-100 bold">Mô tả</h5>
+                    <div class="px-5 py-3">
+                        <input type="text" class="w-full outline-none">
+                    </div>
+                </div>
+                <div class="border rounded border-gray-300 min-h-[150px]">
+                    <h5 class="px-4 py-3 bg-gray-100 bold">Mẫu ghi chú(hoá đơn, đặt hàng)</h5>
+                    <div class="px-5 py-3">
+                        <input type="text" class="w-full outline-none">
+                    </div>
+                </div>
+            </div>
+            <div id="element" class="tabcontent hidden text-sm">
+                <div class="w-2/3 px-4 flex">
+                    <div class="w-1/3">
+                        <label class="font-semibold">Hàng hoá thành phần <i class="far fa-info-circle ml-2"></i></label>
+                    </div>
+                    <div class="w-2/3">
+                        <input type="text" class="w-full outline-none border-b pb-1 focus:border-b-[green] mb-2"
+                            placeholder="Thêm hàng hoá thành phần">
+                        <span class="italic text-gray-500">Hàng hoá này chưa có định lượng nguyên liệu</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Action -->
+            <div class="flex justify-end mt-8 px-6 text-white">
+                <button class="px-5 py-1 bg-green-500 mr-2 rounded">
+                    <i class="far fa-save mr-2 text-base"></i>
+                    Lưu
+                </button>
+                <button class="px-5 py-1 bg-green-500 mr-2 rounded">
+                    <i class="far fa-save mr-2 text-base"></i>
+                    Lưu & Thêm mới
+                </button>
+                <button class="px-5 py-1 bg-green-500 mr-2 rounded">
+                    <i class="far fa-save mr-2 text-base"></i>
+                    Lưu & Sao chép
+                </button>
+                <button class="px-5 py-1 bg-gray-500 rounded" onclick="closeCreProduct()">
+                    <i class="far fa-chevron-circle-right text-base mr-1"></i>
+                    Bỏ qua
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Open, close form create product group
+        function openCreProGroup() {
+            document.getElementById("formCreProGroup").style.display = "block";
+        }
+        function closeCreProGroup() {
+            document.getElementById("formCreProGroup").style.display = "none";
+        }
+
+        // Open, close form create product
+        function openCreProduct() {
+            document.getElementById("formCreProduct").style.display = "block";
+        }
+        function closeCreProduct() {
+            document.getElementById("formCreProduct").style.display = "none";
+        }
+
+        // Change tab form cretate product
+        function openCity(e, cityName) {
+            var i, tabcontent, tablinks;
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            console.log('tabcontent', tabcontent)
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            e.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>
