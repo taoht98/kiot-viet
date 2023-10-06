@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="bg-blue-500 flex h-[54px]">
+        <div class="w-[540px] flex items-center p-2">
+            <div class="bg-white w-[460px] p-2 rounded">
+                <i class="far fa-search px-2"></i>
+                <input type="text" placeholder="Tìm hàng hoá" class="w-11/12 outline-none">
+            </div>
+            <i class="far fa-barcode-read px-4 ml-2"></i>
+        </div>
+        <ul class="w-[980px] flex items-center text-white">
+            <li class="py-3 px-4 mt-2 bg-white rounded-lg text-black">
+                <button>
+                    <i class="far fa-exchange mr-2"></i>
+                    <span class="font-semibold">Hoá đơn 1</span>
+                    <i class="far fa-times ml-2"></i>
+                </button>
+            </li>
+            <li class="py-3 px-4">
+                <i class="far fa-plus-circle mr-2"></i>
+                <i class="far fa-sort-down text-lg"></i>
+            </li>
+        </ul>
+        <ul class="w-[400px] text-white flex items-center justify-end">
+            <li class="p-4">
+                <i class="far fa-shopping-bag"></i>
+            </li>
+            <li class="p-4">
+                <i class="far fa-undo"></i>
+            </li>
+            <li class="p-4">
+                <i class="far fa-sync"></i>
+            </li>
+            <li class="p-4">
+                <i class="far fa-print"></i>
+            </li>
+            <li class="p-4">
+                <span>huynhthetao..</span>
+            </li>
+            <li class="p-4">
+                <i class="far fa-tasks-alt"></i>
+            </li>
+        </ul>
+    </header>
+    <div class="flex p-3 bg-gray-200 h-full">
+        <div class="w-[1370px] mr-3 flex items-end">
+            <div class="bg-white p-4 h-[54px] w-full rounded-xl flex items-center">
+                <i class="far fa-pencil ml-2"></i>
+                <input type="text" placeholder="Ghi chú đơn hàng" class="w-[98%] outline-none px-4 py-2">
+            </div>
+        </div>
+        <div class="w-[500px] bg-white rounded-xl py-2 px-4">
+            <div class="flex justify-between items-center mb-2">
+                <div>
+                    <select class="outline-none px-2 py-1 bg-gray-200 rounded">
+                        <option value="chọn" selected>Bom Huỳnh</option>
+                    </select>
+                    <select class="outline-none px-2 py-1 bg-gray-200 rounded">
+                        <option value="chọn" selected>Bán trực tiếp</option>
+                        <option value="chọn">Khác</option>
+                    </select>
+                </div>
+                <div>
+                    <span class="mr-2">05/10/2023</span>
+                    <span>17:44</span>
+                </div>
+            </div>
+            <div class="bg-gray-200 p-1 rounded py-2 mb-4">
+                <i class="far fa-search px-2"></i>
+                <input type="text" placeholder="Tìm kiếm khách hàng" class="bg-gray-200 w-10/12 outline-none">
+                <i class="far fa-plus-circle ml-2"></i>
+            </div>
+            <div class="flex justify-between flex-col h-[794px]">
+                <div>
+                    <div class="flex justify-between py-2">
+                        <div>Tổng tiền hàng</div>
+                        <div>0</div>
+                    </div>
+                    <div class="flex justify-between py-2">
+                        <div>Giảm giá</div>
+                        <div class="w-1/3 flex justify-end border-b">0</div>
+                    </div>
+                    <div class="flex justify-between py-2">
+                        <div class="font-bold">Khách cần trả</div>
+                        <div class="font-bold text-blue-500">0</div>
+                    </div>
+                    <div class="flex justify-center p-2 border border-blue-500 rounded-xl text-blue-500">
+                        <button><i class="far fa-plus mr-2"></i>Thêm tài khoản ngân hàng</button>
+                    </div>
+                </div>
+                <div class="flex justify-center py-4 rounded-xl bg-blue-500 text-white">
+                    <button>THANH TOÁN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h-[52px] flex justify-between items-center">
+        <div class="flex ml-4 text-lg text-gray-600 font-semibold">
+            <div class="px-4 py-2"><i class="far fa-bolt mr-2"></i> Bán nhanh</div>
+            <div class="px-4 py-2"><i class="far fa-clock mr-2"></i> Bán thuờng</div>
+            <div class="px-4 py-2"><i class="far fa-car-side mr-2"></i> Bán giao hàng</div>
+        </div>
+        <div>
+            <span class="p-2 mr-2"><i class="far fa-phone mr-2"></i>1900 6522</span>
+            <i class="far fa-question-circle p-2 mr-2"></i>
+            <i class="far fa-comment-edit p-2 mr-2"></i>
+        </div>
+    </div>
+</body>
+
+</html>
